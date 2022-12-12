@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Quicksand:wght@500&family=Roboto&display=swap');
+
+:root {
+  --font-main:'Roboto', sans-serif;
+  --color-main: #16133D;
+  --color-green: #3DB370;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px var(--font-main);
+  color: var(--color-main);
+  min-height: 100vh;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+ border-bottom: 1px solid #EFEEF3;
+ padding: 25px 0;
+ margin-bottom: 135px;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+.logo__title {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.2rem;
+  color: var(--color-main);
+}
+
+.title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.title::before {
+  content: "OUR SERVICES";
+  color: #7690A8;
+  font: 16px var(--font-main);
+  position: absolute;
+  top: -15px;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.service__item {
+  padding: 40px;
+  border: 1px solid #E5EAF4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.service__item:hover {
+border-color: var(--color-green);
+}
+
+.service__icon {
+  width: 64px;
+  height: 64px;
+  border: 1px solid rgba(21, 101, 216, 0.1);
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.service__icon:hover .icon--border {
+  fill: var(--color-green);
+}
+
+.service__icon:hover .icon__hover--light-green {
+  fill: #E1F4F5;
+}
+
+.service__icon:hover .icon__hover--lighten-green {
+  fill: #f4feff;
+}
+
+.service__icon:hover .icon__hover--middle-green {
+  fill: #caeff2;
+}
+
+.service__title {
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+}
+
+.service__text {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.service__link {
+  text-decoration: none;
+  font: var(--font-main);
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.footer {
+  background-color: var(--color-main);
+  padding-top: 40px;
+}
+
+.logo__title--footer {
+  color: #FFFFFF;
+}
+
+.social__list {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.social__item {
+  width: 40px;
+  height: 40px;
+  background-color: #EFEEF3;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
