@@ -136,4 +136,21 @@ border-color: var(--color-green);
   background-color: #EFEEF3;
   border-radius: 5px;
   margin-bottom: 40px;
+  position: relative;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #0D0D0D;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon:hover {
+  color: var(--color-green);
 }
